@@ -1,0 +1,27 @@
+/* Customização visual dos campos de chamada no VirtualIF */
+html[data-destaque-f="1"] input._cx_chamada[value="F"],
+html[data-destaque-f="1"] input._cx_chamada[value="f"],
+html[data-destaque-f="1"] input._cx_chamada[data-chamada="F"] {
+  background-color: #ef4444 !important;
+  color: #ffffff !important;
+  font-weight: 700 !important;
+  border-color: #dc2626 !important;
+}
+
+html[data-destaque-i="1"] input._cx_chamada[value="I"],
+html[data-destaque-i="1"] input._cx_chamada[value="i"],
+html[data-destaque-i="1"] input._cx_chamada[data-chamada="I"] {
+  background-color: #3b82f6 !important;
+  color: #ffffff !important;
+  font-weight: 700 !important;
+  border-color: #2563eb !important;
+}
+
+html[data-destaque-e="1"] input._cx_chamada[value="E"],
+html[data-destaque-e="1"] input._cx_chamada[value="e"],
+html[data-destaque-e="1"] input._cx_chamada[data-chamada="E"] {
+  background-color: #f59e0b !important;
+  color: #111827 !important;
+  font-weight: 700 !important;
+  border-color: #d97706 !important;
+}

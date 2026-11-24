@@ -1,0 +1,56 @@
+{
+  "manifest_version": 3,
+  "name": "VirtualIF Tools - Lançar notas e mais...",
+  "version": "1.0.0",
+  "description": "Preenche automaticamente as notas dos alunos no VirtualIF a partir de dados colados (planilha/CSV) com filtros de busca.",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage",
+    "declarativeContent"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://virtualif.iftm.edu.br/*"
+      ],
+      "css": [
+        "virtualif-chamada.css",
+        "virtualif-modulos.css"
+      ],
+      "js": [
+        "virtualif-chamada.js"
+      ],
+      "world": "MAIN",
+      "all_frames": true,
+      "run_at": "document_idle"
+    },
+    {
+      "matches": [
+        "https://virtualif.iftm.edu.br/*"
+      ],
+      "js": [
+        "virtualif-bridge.js"
+      ],
+      "all_frames": true,
+      "run_at": "document_start"
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Lançar Notas - VirtualIF",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}

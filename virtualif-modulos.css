@@ -1,0 +1,109 @@
+/* Cores dos ícones de módulos da página inicial do VirtualIF (baseadas no layout clássico) */
+
+html[data-colorir-modulos="1"] .modulo-circle-btn[aria-label="ALMOX" i],
+html[data-colorir-modulos="1"] .modulo-circle-btn[aria-label="Almoxarifado" i],
+html[data-colorir-modulos="1"] .modulo-circle-btn[aria-label="BIBLIOTECA & REPOSITÓRIO" i],
+html[data-colorir-modulos="1"] .modulo-circle-btn[aria-label="CFV" i],
+html[data-colorir-modulos="1"] .modulo-circle-btn[aria-label="DIÁRIO ELETRÔNICO" i],
+html[data-colorir-modulos="1"] .modulo-circle-btn[aria-label="DISCO VIRTUAL" i],
+html[data-colorir-modulos="1"] .modulo-circle-btn[aria-label="DOCS" i],
+html[data-colorir-modulos="1"] .modulo-circle-btn[aria-label="EI" i],
+html[data-colorir-modulos="1"] .modulo-circle-btn[aria-label="EVENTOS" i],
+html[data-colorir-modulos="1"] .modulo-circle-btn[aria-label="FISCAL" i],
+html[data-colorir-modulos="1"] .modulo-circle-btn[aria-label="GAS" i],
+html[data-colorir-modulos="1"] .modulo-circle-btn[aria-label="GEP" i],
+html[data-colorir-modulos="1"] .modulo-circle-btn[aria-label="GSS" i],
+html[data-colorir-modulos="1"] .modulo-circle-btn[aria-label="LDC" i],
+html[data-colorir-modulos="1"] .modulo-circle-btn[aria-label="MDS" i],
+html[data-colorir-modulos="1"] .modulo-circle-btn[aria-label="MOODLE" i],
+html[data-colorir-modulos="1"] .modulo-circle-btn[aria-label="MPLAN - MPI" i],
+html[data-colorir-modulos="1"] .modulo-circle-btn[aria-label="MURAL" i],
+html[data-colorir-modulos="1"] .modulo-circle-btn[aria-label="NOT" i],
+html[data-colorir-modulos="1"] .modulo-circle-btn[aria-label="PEI" i],
+html[data-colorir-modulos="1"] .modulo-circle-btn[aria-label="PROJETOS" i],
+html[data-colorir-modulos="1"] .modulo-circle-btn[aria-label="SERVIDOR ONLINE" i],
+html[data-colorir-modulos="1"] .modulo-circle-btn[aria-label="VOT" i] {
+  color: #ffffff !important;
+  transition: filter 0.15s ease, transform 0.15s ease;
+}
+
+html[data-colorir-modulos="1"] .modulo-circle-btn[aria-label="ALMOX" i] .module-button-icon,
+html[data-colorir-modulos="1"] .modulo-circle-btn[aria-label="Almoxarifado" i] .module-button-icon,
+html[data-colorir-modulos="1"] .modulo-circle-btn[aria-label="BIBLIOTECA & REPOSITÓRIO" i] .module-button-icon,
+html[data-colorir-modulos="1"] .modulo-circle-btn[aria-label="CFV" i] .module-button-icon,
+html[data-colorir-modulos="1"] .modulo-circle-btn[aria-label="DIÁRIO ELETRÔNICO" i] .module-button-icon,
+html[data-colorir-modulos="1"] .modulo-circle-btn[aria-label="DISCO VIRTUAL" i] .module-button-icon,
+html[data-colorir-modulos="1"] .modulo-circle-btn[aria-label="DOCS" i] .module-button-icon,
+html[data-colorir-modulos="1"] .modulo-circle-btn[aria-label="EI" i] .module-button-icon,
+html[data-colorir-modulos="1"] .modulo-circle-btn[aria-label="EVENTOS" i] .module-button-icon,
+html[data-colorir-modulos="1"] .modulo-circle-btn[aria-label="FISCAL" i] .module-button-icon,
+html[data-colorir-modulos="1"] .modulo-circle-btn[aria-label="GAS" i] .module-button-icon,
+html[data-colorir-modulos="1"] .modulo-circle-btn[aria-label="GEP" i] .module-button-icon,
+html[data-colorir-modulos="1"] .modulo-circle-btn[aria-label="GSS" i] .module-button-icon,
+html[data-colorir-modulos="1"] .modulo-circle-btn[aria-label="LDC" i] .module-button-icon,
+html[data-colorir-modulos="1"] .modulo-circle-btn[aria-label="MDS" i] .module-button-icon,
+html[data-colorir-modulos="1"] .modulo-circle-btn[aria-label="MOODLE" i] .module-button-icon,
+html[data-colorir-modulos="1"] .modulo-circle-btn[aria-label="MPLAN - MPI" i] .module-button-icon,
+html[data-colorir-modulos="1"] .modulo-circle-btn[aria-label="MURAL" i] .module-button-icon,
+html[data-colorir-modulos="1"] .modulo-circle-btn[aria-label="NOT" i] .module-button-icon,
+html[data-colorir-modulos="1"] .modulo-circle-btn[aria-label="PEI" i] .module-button-icon,
+html[data-colorir-modulos="1"] .modulo-circle-btn[aria-label="PROJETOS" i] .module-button-icon,
+html[data-colorir-modulos="1"] .modulo-circle-btn[aria-label="SERVIDOR ONLINE" i] .module-button-icon,
+html[data-colorir-modulos="1"] .modulo-circle-btn[aria-label="VOT" i] .module-button-icon {
+  color: #ffffff !important;
+}
+
+/* Vermelho (#e30613) */
+html[data-colorir-modulos="1"] .modulo-circle-btn[aria-label="BIBLIOTECA & REPOSITÓRIO" i],
+html[data-colorir-modulos="1"] .modulo-circle-btn[aria-label="DIÁRIO ELETRÔNICO" i],
+html[data-colorir-modulos="1"] .modulo-circle-btn[aria-label="DISCO VIRTUAL" i],
+html[data-colorir-modulos="1"] .modulo-circle-btn[aria-label="FISCAL" i],
+html[data-colorir-modulos="1"] .modulo-circle-btn[aria-label="MOODLE" i],
+html[data-colorir-modulos="1"] .modulo-circle-btn[aria-label="MURAL" i] {
+  background-color: #e30613 !important;
+}
+
+/* Laranja (#f39200) */
+html[data-colorir-modulos="1"] .modulo-circle-btn[aria-label="CFV" i],
+html[data-colorir-modulos="1"] .modulo-circle-btn[aria-label="DOCS" i],
+html[data-colorir-modulos="1"] .modulo-circle-btn[aria-label="PEI" i] {
+  background-color: #f39200 !important;
+}
+
+/* Turquesa / Teal (#2db3ac) */
+html[data-colorir-modulos="1"] .modulo-circle-btn[aria-label="EI" i],
+html[data-colorir-modulos="1"] .modulo-circle-btn[aria-label="EVENTOS" i] {
+  background-color: #2db3ac !important;
+}
+
+/* Verde (#00a859) */
+html[data-colorir-modulos="1"] .modulo-circle-btn[aria-label="GEP" i],
+html[data-colorir-modulos="1"] .modulo-circle-btn[aria-label="MPLAN - MPI" i] {
+  background-color: #00a859 !important;
+}
+
+/* Azul médio (#00779b) */
+html[data-colorir-modulos="1"] .modulo-circle-btn[aria-label="GSS" i],
+html[data-colorir-modulos="1"] .modulo-circle-btn[aria-label="LDC" i],
+html[data-colorir-modulos="1"] .modulo-circle-btn[aria-label="MDS" i],
+html[data-colorir-modulos="1"] .modulo-circle-btn[aria-label="NOT" i],
+html[data-colorir-modulos="1"] .modulo-circle-btn[aria-label="SERVIDOR ONLINE" i] {
+  background-color: #00779b !important;
+}
+
+/* Azul escuro (#005a7d) */
+html[data-colorir-modulos="1"] .modulo-circle-btn[aria-label="GAS" i],
+html[data-colorir-modulos="1"] .modulo-circle-btn[aria-label="PROJETOS" i] {
+  background-color: #005a7d !important;
+}
+
+/* Roxo (#7c3aed) - módulos fora do print clássico */
+html[data-colorir-modulos="1"] .modulo-circle-btn[aria-label="ALMOX" i],
+html[data-colorir-modulos="1"] .modulo-circle-btn[aria-label="Almoxarifado" i] {
+  background-color: #7c3aed !important;
+}
+
+/* Cinza-azulado (#607d8b) */
+html[data-colorir-modulos="1"] .modulo-circle-btn[aria-label="VOT" i] {
+  background-color: #607d8b !important;
+}

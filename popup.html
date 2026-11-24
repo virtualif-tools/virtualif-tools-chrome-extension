@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VirtualIF Tools</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="header-title">
+        <span class="badge-if">
+          <img src="icons/icon48.png" alt="VirtualIF Tools">
+        </span>
+        <div>
+          <h1>VirtualIF Tools</h1>
+          <p class="subtitle">Cole os dados da planilha e preencha automaticamente</p>
+        </div>
+      </div>
+      <a href="sobre.html" class="btn-header-link">Sobre</a>
+    </header>
+
+    <div class="layout">
+      <main class="main-col">
+        <section class="card">
+          <div class="card-header">
+            <label for="rawInput" class="section-title">1. Dados dos Alunos (Nome e Nota)</label>
+            <button id="btnClear" type="button" class="btn-link" title="Limpar texto">Limpar</button>
+          </div>
+
+          <div class="split-controls">
+            <div class="control-group">
+              <label for="delimiterSelect">Separador (split):</label>
+              <select id="delimiterSelect">
+                <option value="\t">Tabulação (Planilha / Excel)</option>
+                <option value=";">Ponto e vírgula (;)</option>
+                <option value=",">Vírgula (,)</option>
+                <option value="|">Pipe (|)</option>
+                <option value=" ">Espaço ( )</option>
+                <option value="custom">Personalizado...</option>
+              </select>
+            </div>
+
+            <div id="customDelimiterGroup" class="control-group hidden">
+              <label for="customDelimiter">Caractere:</label>
+              <input id="customDelimiter" type="text" maxlength="5" placeholder="ex: :" />
+            </div>
+          </div>
+
+          <textarea id="rawInput" rows="6" spellcheck="false"
+            placeholder="Cole aqui (ex: Ctrl+C do Google Planilhas ou Excel):&#10;Aluno Exemplo 1&#9;10&#10;Aluno Exemplo 2&#9;8,5"></textarea>
+
+          <div class="input-footer">
+            <label class="checkbox-inline">
+              <input type="checkbox" id="skipHeader" />
+              <span>Ignorar 1ª linha (cabeçalho)</span>
+            </label>
+            <span id="parsedCount" class="count-badge">0 alunos</span>
+          </div>
+        </section>
+
+        <section id="previewSection" class="card preview-card hidden">
+          <div class="card-header">
+            <span class="section-title">3. Pré-visualização</span>
+            <span id="skippedInfo" class="skipped-info"></span>
+          </div>
+          <div class="preview-table-wrap">
+            <table class="preview-table">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Nome</th>
+                  <th>Nota</th>
+                </tr>
+              </thead>
+              <tbody id="previewBody"></tbody>
+            </table>
+          </div>
+        </section>
+      </main>
+
+      <aside class="sidebar">
+        <section class="card">
+          <div class="section-title">2. Filtros de Correspondência</div>
+          <div class="filters-list">
+            <label class="checkbox-item">
+              <input type="checkbox" id="ignoreCase" checked />
+              <span>Ignorar maiúsculas e minúsculas <small>(MARIA = Maria)</small></span>
+            </label>
+            <label class="checkbox-item">
+              <input type="checkbox" id="ignoreSpecialChars" checked />
+              <span>Ignorar acentos e caracteres especiais <small>(João = Joao)</small></span>
+            </label>
+            <label class="checkbox-item">
+              <input type="checkbox" id="trimSpaces" checked />
+              <span>Normalizar espaços extras</span>
+            </label>
+          </div>
+        </section>
+
+        <section class="card">
+          <div class="section-title">Destaques na Chamada</div>
+          <div class="filters-list">
+            <label class="checkbox-item">
+              <input type="checkbox" id="highlightF" checked />
+              <span class="swatch-label"><span class="swatch swatch-f">F</span> Faltas</span>
+            </label>
+            <label class="checkbox-item">
+              <input type="checkbox" id="highlightI" checked />
+              <span class="swatch-label"><span class="swatch swatch-i">I</span> Abonos institucionais</span>
+            </label>
+            <label class="checkbox-item">
+              <input type="checkbox" id="highlightE" checked />
+              <span class="swatch-label"><span class="swatch swatch-e">E</span> Estudos domiciliares</span>
+            </label>
+          </div>
+        </section>
+
+        <section class="card">
+          <div class="section-title">Ícones da Página Inicial</div>
+          <div class="filters-list">
+            <label class="checkbox-item">
+              <input type="checkbox" id="colorModules" checked />
+              <span>Colorir ícones estilo antigo</span>
+            </label>
+          </div>
+        </section>
+
+        <div class="actions">
+          <button id="btnFill" type="button" class="btn-primary" disabled>
+            Preencher Notas no VirtualIF
+          </button>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  <div id="statusBox" class="toast hidden" role="status" aria-live="polite"></div>
+
+  <script src="popup.js"></script>
+</body>
+
+</html>
